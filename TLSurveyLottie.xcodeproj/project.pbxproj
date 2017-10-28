@@ -1,0 +1,927 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77D77654102AD51DCD9CA75B /* Pods_TLSurveyLottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 644907A6799B797BB6788B1B /* Pods_TLSurveyLottie.framework */; };
+		7E87B3ED1FA2EDCF008C391C /* TLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E87B3EC1FA2EDCF008C391C /* TLAppDelegate.m */; };
+		7E87B3F01FA2EDCF008C391C /* TLRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E87B3EF1FA2EDCF008C391C /* TLRootViewController.m */; };
+		7E87B3F51FA2EDCF008C391C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E87B3F41FA2EDCF008C391C /* Assets.xcassets */; };
+		7E87B3F81FA2EDCF008C391C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E87B3F61FA2EDCF008C391C /* LaunchScreen.storyboard */; };
+		7E87B3FB1FA2EDCF008C391C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E87B3FA1FA2EDCF008C391C /* main.m */; };
+		7E87B4051FA2EDCF008C391C /* TLSurveyLottieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E87B4041FA2EDCF008C391C /* TLSurveyLottieTests.m */; };
+		7E87B4101FA2EDD0008C391C /* TLSurveyLottieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E87B40F1FA2EDD0008C391C /* TLSurveyLottieUITests.m */; };
+		7ED76A831FA312BB000B8DEF /* TLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76A821FA312BB000B8DEF /* TLDetailViewController.m */; };
+		7ED76A871FA313AA000B8DEF /* TLAnimationExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76A861FA313AA000B8DEF /* TLAnimationExplorerViewController.m */; };
+		7ED76A8A1FA314D7000B8DEF /* TLJSONExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76A891FA314D7000B8DEF /* TLJSONExplorerViewController.m */; };
+		7ED76A8D1FA314E9000B8DEF /* TLQRScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76A8C1FA314E9000B8DEF /* TLQRScannerViewController.m */; };
+		7ED76ABC1FA3162D000B8DEF /* 9squares-AlBoardman.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76A8F1FA3162D000B8DEF /* 9squares-AlBoardman.json */; };
+		7ED76ABD1FA3162D000B8DEF /* HamburgerArrow.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76A901FA3162D000B8DEF /* HamburgerArrow.json */; };
+		7ED76ABE1FA3162D000B8DEF /* IconTransitions.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76A911FA3162D000B8DEF /* IconTransitions.json */; };
+		7ED76ABF1FA3162D000B8DEF /* LottieLogo1.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76A921FA3162D000B8DEF /* LottieLogo1.json */; };
+		7ED76AC01FA3162D000B8DEF /* LottieLogo1_masked.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76A931FA3162D000B8DEF /* LottieLogo1_masked.json */; };
+		7ED76AC11FA3162D000B8DEF /* LottieLogo2.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76A941FA3162D000B8DEF /* LottieLogo2.json */; };
+		7ED76AC21FA3162D000B8DEF /* MotionCorpse-Jrcanest.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76A951FA3162D000B8DEF /* MotionCorpse-Jrcanest.json */; };
+		7ED76AC31FA3162D000B8DEF /* PinJump.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76A961FA3162D000B8DEF /* PinJump.json */; };
+		7ED76AC41FA3162D000B8DEF /* Switch.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76A971FA3162D000B8DEF /* Switch.json */; };
+		7ED76AC51FA3162D000B8DEF /* Switch_States.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76A981FA3162D000B8DEF /* Switch_States.json */; };
+		7ED76AC61FA3162D000B8DEF /* TwitterHeart.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76A991FA3162D000B8DEF /* TwitterHeart.json */; };
+		7ED76AC71FA3162D000B8DEF /* A.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76A9B1FA3162D000B8DEF /* A.json */; };
+		7ED76AC81FA3162D000B8DEF /* Apostrophe.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76A9C1FA3162D000B8DEF /* Apostrophe.json */; };
+		7ED76AC91FA3162D000B8DEF /* B.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76A9D1FA3162D000B8DEF /* B.json */; };
+		7ED76ACA1FA3162D000B8DEF /* BlinkingCursor.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76A9E1FA3162D000B8DEF /* BlinkingCursor.json */; };
+		7ED76ACB1FA3162D000B8DEF /* C.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76A9F1FA3162D000B8DEF /* C.json */; };
+		7ED76ACC1FA3162D000B8DEF /* Colon.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AA01FA3162D000B8DEF /* Colon.json */; };
+		7ED76ACD1FA3162D000B8DEF /* Comma.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AA11FA3162D000B8DEF /* Comma.json */; };
+		7ED76ACE1FA3162D000B8DEF /* D.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AA21FA3162D000B8DEF /* D.json */; };
+		7ED76ACF1FA3162D000B8DEF /* E.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AA31FA3162D000B8DEF /* E.json */; };
+		7ED76AD01FA3162D000B8DEF /* F.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AA41FA3162D000B8DEF /* F.json */; };
+		7ED76AD11FA3162D000B8DEF /* G.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AA51FA3162D000B8DEF /* G.json */; };
+		7ED76AD21FA3162D000B8DEF /* H.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AA61FA3162D000B8DEF /* H.json */; };
+		7ED76AD31FA3162D000B8DEF /* I.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AA71FA3162D000B8DEF /* I.json */; };
+		7ED76AD41FA3162D000B8DEF /* J.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AA81FA3162D000B8DEF /* J.json */; };
+		7ED76AD51FA3162D000B8DEF /* K.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AA91FA3162D000B8DEF /* K.json */; };
+		7ED76AD61FA3162D000B8DEF /* L.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AAA1FA3162D000B8DEF /* L.json */; };
+		7ED76AD71FA3162D000B8DEF /* M.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AAB1FA3162D000B8DEF /* M.json */; };
+		7ED76AD81FA3162D000B8DEF /* N.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AAC1FA3162D000B8DEF /* N.json */; };
+		7ED76AD91FA3162D000B8DEF /* O.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AAD1FA3162D000B8DEF /* O.json */; };
+		7ED76ADA1FA3162D000B8DEF /* P.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AAE1FA3162D000B8DEF /* P.json */; };
+		7ED76ADB1FA3162D000B8DEF /* Q.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AAF1FA3162D000B8DEF /* Q.json */; };
+		7ED76ADC1FA3162D000B8DEF /* R.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AB01FA3162D000B8DEF /* R.json */; };
+		7ED76ADD1FA3162D000B8DEF /* S.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AB11FA3162D000B8DEF /* S.json */; };
+		7ED76ADE1FA3162D000B8DEF /* T.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AB21FA3162D000B8DEF /* T.json */; };
+		7ED76ADF1FA3162D000B8DEF /* U.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AB31FA3162D000B8DEF /* U.json */; };
+		7ED76AE01FA3162D000B8DEF /* V.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AB41FA3162D000B8DEF /* V.json */; };
+		7ED76AE11FA3162D000B8DEF /* W.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AB51FA3162D000B8DEF /* W.json */; };
+		7ED76AE21FA3162D000B8DEF /* X.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AB61FA3162D000B8DEF /* X.json */; };
+		7ED76AE31FA3162D000B8DEF /* Y.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AB71FA3162D000B8DEF /* Y.json */; };
+		7ED76AE41FA3162D000B8DEF /* Z.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AB81FA3162D000B8DEF /* Z.json */; };
+		7ED76AE51FA3162D000B8DEF /* vcTransition1.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76AB91FA3162D000B8DEF /* vcTransition1.json */; };
+		7ED76AE61FA3162D000B8DEF /* vcTransition2.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76ABA1FA3162D000B8DEF /* vcTransition2.json */; };
+		7ED76AE71FA3162D000B8DEF /* Watermelon.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ED76ABB1FA3162D000B8DEF /* Watermelon.json */; };
+		7ED76AF31FA32632000B8DEF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED76AF21FA32628000B8DEF /* AVFoundation.framework */; };
+		7ED76AF51FA32649000B8DEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED76AF41FA3263F000B8DEF /* CoreGraphics.framework */; };
+		7ED76AFA1FA3287D000B8DEF /* TLAnimatedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76AF71FA3287C000B8DEF /* TLAnimatedTextField.m */; };
+		7ED76AFB1FA3287D000B8DEF /* TLAnimationKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76AF91FA3287D000B8DEF /* TLAnimationKeyboardViewController.m */; };
+		7ED76B021FA3321A000B8DEF /* TLAnimationTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76B011FA3321A000B8DEF /* TLAnimationTransitionViewController.m */; };
+		7ED76B051FA33238000B8DEF /* TLAnimationUIControlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76B041FA33238000B8DEF /* TLAnimationUIControlsViewController.m */; };
+		7ED76B081FA3333D000B8DEF /* TLCloseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76B071FA3333D000B8DEF /* TLCloseAnimationViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E87B4011FA2EDCF008C391C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E87B3E01FA2EDCF008C391C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E87B3E71FA2EDCF008C391C;
+			remoteInfo = TLSurveyLottie;
+		};
+		7E87B40C1FA2EDD0008C391C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E87B3E01FA2EDCF008C391C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E87B3E71FA2EDCF008C391C;
+			remoteInfo = TLSurveyLottie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C0FD38ABCBE85715CCB3824 /* Pods-TLSurveyLottie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLSurveyLottie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TLSurveyLottie/Pods-TLSurveyLottie.debug.xcconfig"; sourceTree = "<group>"; };
+		644907A6799B797BB6788B1B /* Pods_TLSurveyLottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TLSurveyLottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E87B3E81FA2EDCF008C391C /* TLSurveyLottie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLSurveyLottie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E87B3EB1FA2EDCF008C391C /* TLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLAppDelegate.h; sourceTree = "<group>"; };
+		7E87B3EC1FA2EDCF008C391C /* TLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLAppDelegate.m; sourceTree = "<group>"; };
+		7E87B3EE1FA2EDCF008C391C /* TLRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLRootViewController.h; sourceTree = "<group>"; };
+		7E87B3EF1FA2EDCF008C391C /* TLRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLRootViewController.m; sourceTree = "<group>"; };
+		7E87B3F41FA2EDCF008C391C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E87B3F71FA2EDCF008C391C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E87B3F91FA2EDCF008C391C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E87B3FA1FA2EDCF008C391C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7E87B4001FA2EDCF008C391C /* TLSurveyLottieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TLSurveyLottieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E87B4041FA2EDCF008C391C /* TLSurveyLottieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLSurveyLottieTests.m; sourceTree = "<group>"; };
+		7E87B4061FA2EDCF008C391C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E87B40B1FA2EDD0008C391C /* TLSurveyLottieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TLSurveyLottieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E87B40F1FA2EDD0008C391C /* TLSurveyLottieUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLSurveyLottieUITests.m; sourceTree = "<group>"; };
+		7E87B4111FA2EDD0008C391C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ED76A801FA2FAC6000B8DEF /* TLSurveyLottie-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TLSurveyLottie-Prefix.pch"; sourceTree = "<group>"; };
+		7ED76A811FA312BB000B8DEF /* TLDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDetailViewController.h; sourceTree = "<group>"; };
+		7ED76A821FA312BB000B8DEF /* TLDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLDetailViewController.m; sourceTree = "<group>"; };
+		7ED76A851FA313AA000B8DEF /* TLAnimationExplorerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLAnimationExplorerViewController.h; sourceTree = "<group>"; };
+		7ED76A861FA313AA000B8DEF /* TLAnimationExplorerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLAnimationExplorerViewController.m; sourceTree = "<group>"; };
+		7ED76A881FA314D7000B8DEF /* TLJSONExplorerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLJSONExplorerViewController.h; sourceTree = "<group>"; };
+		7ED76A891FA314D7000B8DEF /* TLJSONExplorerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLJSONExplorerViewController.m; sourceTree = "<group>"; };
+		7ED76A8B1FA314E9000B8DEF /* TLQRScannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLQRScannerViewController.h; sourceTree = "<group>"; };
+		7ED76A8C1FA314E9000B8DEF /* TLQRScannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLQRScannerViewController.m; sourceTree = "<group>"; };
+		7ED76A8F1FA3162D000B8DEF /* 9squares-AlBoardman.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "9squares-AlBoardman.json"; sourceTree = "<group>"; };
+		7ED76A901FA3162D000B8DEF /* HamburgerArrow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HamburgerArrow.json; sourceTree = "<group>"; };
+		7ED76A911FA3162D000B8DEF /* IconTransitions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IconTransitions.json; sourceTree = "<group>"; };
+		7ED76A921FA3162D000B8DEF /* LottieLogo1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieLogo1.json; sourceTree = "<group>"; };
+		7ED76A931FA3162D000B8DEF /* LottieLogo1_masked.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieLogo1_masked.json; sourceTree = "<group>"; };
+		7ED76A941FA3162D000B8DEF /* LottieLogo2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieLogo2.json; sourceTree = "<group>"; };
+		7ED76A951FA3162D000B8DEF /* MotionCorpse-Jrcanest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "MotionCorpse-Jrcanest.json"; sourceTree = "<group>"; };
+		7ED76A961FA3162D000B8DEF /* PinJump.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PinJump.json; sourceTree = "<group>"; };
+		7ED76A971FA3162D000B8DEF /* Switch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Switch.json; sourceTree = "<group>"; };
+		7ED76A981FA3162D000B8DEF /* Switch_States.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Switch_States.json; sourceTree = "<group>"; };
+		7ED76A991FA3162D000B8DEF /* TwitterHeart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TwitterHeart.json; sourceTree = "<group>"; };
+		7ED76A9B1FA3162D000B8DEF /* A.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = A.json; sourceTree = "<group>"; };
+		7ED76A9C1FA3162D000B8DEF /* Apostrophe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Apostrophe.json; sourceTree = "<group>"; };
+		7ED76A9D1FA3162D000B8DEF /* B.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = B.json; sourceTree = "<group>"; };
+		7ED76A9E1FA3162D000B8DEF /* BlinkingCursor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BlinkingCursor.json; sourceTree = "<group>"; };
+		7ED76A9F1FA3162D000B8DEF /* C.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = C.json; sourceTree = "<group>"; };
+		7ED76AA01FA3162D000B8DEF /* Colon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Colon.json; sourceTree = "<group>"; };
+		7ED76AA11FA3162D000B8DEF /* Comma.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Comma.json; sourceTree = "<group>"; };
+		7ED76AA21FA3162D000B8DEF /* D.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = D.json; sourceTree = "<group>"; };
+		7ED76AA31FA3162D000B8DEF /* E.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = E.json; sourceTree = "<group>"; };
+		7ED76AA41FA3162D000B8DEF /* F.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = F.json; sourceTree = "<group>"; };
+		7ED76AA51FA3162D000B8DEF /* G.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = G.json; sourceTree = "<group>"; };
+		7ED76AA61FA3162D000B8DEF /* H.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = H.json; sourceTree = "<group>"; };
+		7ED76AA71FA3162D000B8DEF /* I.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = I.json; sourceTree = "<group>"; };
+		7ED76AA81FA3162D000B8DEF /* J.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = J.json; sourceTree = "<group>"; };
+		7ED76AA91FA3162D000B8DEF /* K.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = K.json; sourceTree = "<group>"; };
+		7ED76AAA1FA3162D000B8DEF /* L.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = L.json; sourceTree = "<group>"; };
+		7ED76AAB1FA3162D000B8DEF /* M.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = M.json; sourceTree = "<group>"; };
+		7ED76AAC1FA3162D000B8DEF /* N.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = N.json; sourceTree = "<group>"; };
+		7ED76AAD1FA3162D000B8DEF /* O.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = O.json; sourceTree = "<group>"; };
+		7ED76AAE1FA3162D000B8DEF /* P.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = P.json; sourceTree = "<group>"; };
+		7ED76AAF1FA3162D000B8DEF /* Q.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Q.json; sourceTree = "<group>"; };
+		7ED76AB01FA3162D000B8DEF /* R.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = R.json; sourceTree = "<group>"; };
+		7ED76AB11FA3162D000B8DEF /* S.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = S.json; sourceTree = "<group>"; };
+		7ED76AB21FA3162D000B8DEF /* T.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = T.json; sourceTree = "<group>"; };
+		7ED76AB31FA3162D000B8DEF /* U.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = U.json; sourceTree = "<group>"; };
+		7ED76AB41FA3162D000B8DEF /* V.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = V.json; sourceTree = "<group>"; };
+		7ED76AB51FA3162D000B8DEF /* W.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = W.json; sourceTree = "<group>"; };
+		7ED76AB61FA3162D000B8DEF /* X.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = X.json; sourceTree = "<group>"; };
+		7ED76AB71FA3162D000B8DEF /* Y.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Y.json; sourceTree = "<group>"; };
+		7ED76AB81FA3162D000B8DEF /* Z.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Z.json; sourceTree = "<group>"; };
+		7ED76AB91FA3162D000B8DEF /* vcTransition1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition1.json; sourceTree = "<group>"; };
+		7ED76ABA1FA3162D000B8DEF /* vcTransition2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition2.json; sourceTree = "<group>"; };
+		7ED76ABB1FA3162D000B8DEF /* Watermelon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Watermelon.json; sourceTree = "<group>"; };
+		7ED76AF21FA32628000B8DEF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7ED76AF41FA3263F000B8DEF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7ED76AF61FA3287C000B8DEF /* TLAnimationKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLAnimationKeyboardViewController.h; sourceTree = "<group>"; };
+		7ED76AF71FA3287C000B8DEF /* TLAnimatedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLAnimatedTextField.m; sourceTree = "<group>"; };
+		7ED76AF81FA3287C000B8DEF /* TLAnimatedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLAnimatedTextField.h; sourceTree = "<group>"; };
+		7ED76AF91FA3287D000B8DEF /* TLAnimationKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLAnimationKeyboardViewController.m; sourceTree = "<group>"; };
+		7ED76AFC1FA33097000B8DEF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		7ED76B001FA3321A000B8DEF /* TLAnimationTransitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLAnimationTransitionViewController.h; sourceTree = "<group>"; };
+		7ED76B011FA3321A000B8DEF /* TLAnimationTransitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLAnimationTransitionViewController.m; sourceTree = "<group>"; };
+		7ED76B031FA33238000B8DEF /* TLAnimationUIControlsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLAnimationUIControlsViewController.h; sourceTree = "<group>"; };
+		7ED76B041FA33238000B8DEF /* TLAnimationUIControlsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLAnimationUIControlsViewController.m; sourceTree = "<group>"; };
+		7ED76B061FA3333D000B8DEF /* TLCloseAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLCloseAnimationViewController.h; sourceTree = "<group>"; };
+		7ED76B071FA3333D000B8DEF /* TLCloseAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLCloseAnimationViewController.m; sourceTree = "<group>"; };
+		7ED76B0A1FA36F57000B8DEF /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1A63B3FFC9FA695629B457 /* Pods-TLSurveyLottie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLSurveyLottie.release.xcconfig"; path = "Pods/Target Support Files/Pods-TLSurveyLottie/Pods-TLSurveyLottie.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E87B3E51FA2EDCF008C391C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ED76AF31FA32632000B8DEF /* AVFoundation.framework in Frameworks */,
+				7ED76AF51FA32649000B8DEF /* CoreGraphics.framework in Frameworks */,
+				77D77654102AD51DCD9CA75B /* Pods_TLSurveyLottie.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E87B3FD1FA2EDCF008C391C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E87B4081FA2EDD0008C391C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E87B3DF1FA2EDCF008C391C = {
+			isa = PBXGroup;
+			children = (
+				7E87B3EA1FA2EDCF008C391C /* TLSurveyLottie */,
+				7E87B4031FA2EDCF008C391C /* TLSurveyLottieTests */,
+				7E87B40E1FA2EDD0008C391C /* TLSurveyLottieUITests */,
+				7E87B3E91FA2EDCF008C391C /* Products */,
+				C54B5D3AC106EBF831ED5CB3 /* Pods */,
+				C66FB07C262C7E3FC3AAF221 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7E87B3E91FA2EDCF008C391C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E87B3E81FA2EDCF008C391C /* TLSurveyLottie.app */,
+				7E87B4001FA2EDCF008C391C /* TLSurveyLottieTests.xctest */,
+				7E87B40B1FA2EDD0008C391C /* TLSurveyLottieUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E87B3EA1FA2EDCF008C391C /* TLSurveyLottie */ = {
+			isa = PBXGroup;
+			children = (
+				7ED76AFF1FA331EC000B8DEF /* Animation UIControls */,
+				7ED76AFE1FA331E7000B8DEF /* Animation Transition */,
+				7ED76AE81FA32139000B8DEF /* Animation Keyboard */,
+				7ED76A841FA31391000B8DEF /* Animation Explorer */,
+				7E87B3EB1FA2EDCF008C391C /* TLAppDelegate.h */,
+				7E87B3EC1FA2EDCF008C391C /* TLAppDelegate.m */,
+				7E87B3EE1FA2EDCF008C391C /* TLRootViewController.h */,
+				7E87B3EF1FA2EDCF008C391C /* TLRootViewController.m */,
+				7ED76A811FA312BB000B8DEF /* TLDetailViewController.h */,
+				7ED76A821FA312BB000B8DEF /* TLDetailViewController.m */,
+				7E87B3F41FA2EDCF008C391C /* Assets.xcassets */,
+				7E87B3F61FA2EDCF008C391C /* LaunchScreen.storyboard */,
+				7E87B3F91FA2EDCF008C391C /* Info.plist */,
+				7E87B3FA1FA2EDCF008C391C /* main.m */,
+				7ED76A801FA2FAC6000B8DEF /* TLSurveyLottie-Prefix.pch */,
+				7ED76A8E1FA3162D000B8DEF /* Resources */,
+			);
+			path = TLSurveyLottie;
+			sourceTree = "<group>";
+		};
+		7E87B4031FA2EDCF008C391C /* TLSurveyLottieTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E87B4041FA2EDCF008C391C /* TLSurveyLottieTests.m */,
+				7E87B4061FA2EDCF008C391C /* Info.plist */,
+			);
+			path = TLSurveyLottieTests;
+			sourceTree = "<group>";
+		};
+		7E87B40E1FA2EDD0008C391C /* TLSurveyLottieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7E87B40F1FA2EDD0008C391C /* TLSurveyLottieUITests.m */,
+				7E87B4111FA2EDD0008C391C /* Info.plist */,
+			);
+			path = TLSurveyLottieUITests;
+			sourceTree = "<group>";
+		};
+		7ED76A841FA31391000B8DEF /* Animation Explorer */ = {
+			isa = PBXGroup;
+			children = (
+				7ED76A851FA313AA000B8DEF /* TLAnimationExplorerViewController.h */,
+				7ED76A861FA313AA000B8DEF /* TLAnimationExplorerViewController.m */,
+				7ED76A881FA314D7000B8DEF /* TLJSONExplorerViewController.h */,
+				7ED76A891FA314D7000B8DEF /* TLJSONExplorerViewController.m */,
+				7ED76A8B1FA314E9000B8DEF /* TLQRScannerViewController.h */,
+				7ED76A8C1FA314E9000B8DEF /* TLQRScannerViewController.m */,
+			);
+			path = "Animation Explorer";
+			sourceTree = "<group>";
+		};
+		7ED76A8E1FA3162D000B8DEF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7ED76A8F1FA3162D000B8DEF /* 9squares-AlBoardman.json */,
+				7ED76A901FA3162D000B8DEF /* HamburgerArrow.json */,
+				7ED76A911FA3162D000B8DEF /* IconTransitions.json */,
+				7ED76A921FA3162D000B8DEF /* LottieLogo1.json */,
+				7ED76A931FA3162D000B8DEF /* LottieLogo1_masked.json */,
+				7ED76A941FA3162D000B8DEF /* LottieLogo2.json */,
+				7ED76A951FA3162D000B8DEF /* MotionCorpse-Jrcanest.json */,
+				7ED76A961FA3162D000B8DEF /* PinJump.json */,
+				7ED76A971FA3162D000B8DEF /* Switch.json */,
+				7ED76A981FA3162D000B8DEF /* Switch_States.json */,
+				7ED76A991FA3162D000B8DEF /* TwitterHeart.json */,
+				7ED76A9A1FA3162D000B8DEF /* TypeFace */,
+				7ED76AB91FA3162D000B8DEF /* vcTransition1.json */,
+				7ED76ABA1FA3162D000B8DEF /* vcTransition2.json */,
+				7ED76ABB1FA3162D000B8DEF /* Watermelon.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7ED76A9A1FA3162D000B8DEF /* TypeFace */ = {
+			isa = PBXGroup;
+			children = (
+				7ED76A9B1FA3162D000B8DEF /* A.json */,
+				7ED76A9C1FA3162D000B8DEF /* Apostrophe.json */,
+				7ED76A9D1FA3162D000B8DEF /* B.json */,
+				7ED76A9E1FA3162D000B8DEF /* BlinkingCursor.json */,
+				7ED76A9F1FA3162D000B8DEF /* C.json */,
+				7ED76AA01FA3162D000B8DEF /* Colon.json */,
+				7ED76AA11FA3162D000B8DEF /* Comma.json */,
+				7ED76AA21FA3162D000B8DEF /* D.json */,
+				7ED76AA31FA3162D000B8DEF /* E.json */,
+				7ED76AA41FA3162D000B8DEF /* F.json */,
+				7ED76AA51FA3162D000B8DEF /* G.json */,
+				7ED76AA61FA3162D000B8DEF /* H.json */,
+				7ED76AA71FA3162D000B8DEF /* I.json */,
+				7ED76AA81FA3162D000B8DEF /* J.json */,
+				7ED76AA91FA3162D000B8DEF /* K.json */,
+				7ED76AAA1FA3162D000B8DEF /* L.json */,
+				7ED76AAB1FA3162D000B8DEF /* M.json */,
+				7ED76AAC1FA3162D000B8DEF /* N.json */,
+				7ED76AAD1FA3162D000B8DEF /* O.json */,
+				7ED76AAE1FA3162D000B8DEF /* P.json */,
+				7ED76AAF1FA3162D000B8DEF /* Q.json */,
+				7ED76AB01FA3162D000B8DEF /* R.json */,
+				7ED76AB11FA3162D000B8DEF /* S.json */,
+				7ED76AB21FA3162D000B8DEF /* T.json */,
+				7ED76AB31FA3162D000B8DEF /* U.json */,
+				7ED76AB41FA3162D000B8DEF /* V.json */,
+				7ED76AB51FA3162D000B8DEF /* W.json */,
+				7ED76AB61FA3162D000B8DEF /* X.json */,
+				7ED76AB71FA3162D000B8DEF /* Y.json */,
+				7ED76AB81FA3162D000B8DEF /* Z.json */,
+			);
+			path = TypeFace;
+			sourceTree = "<group>";
+		};
+		7ED76AE81FA32139000B8DEF /* Animation Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7ED76AF81FA3287C000B8DEF /* TLAnimatedTextField.h */,
+				7ED76AF71FA3287C000B8DEF /* TLAnimatedTextField.m */,
+				7ED76AF61FA3287C000B8DEF /* TLAnimationKeyboardViewController.h */,
+				7ED76AF91FA3287D000B8DEF /* TLAnimationKeyboardViewController.m */,
+			);
+			path = "Animation Keyboard";
+			sourceTree = "<group>";
+		};
+		7ED76AFE1FA331E7000B8DEF /* Animation Transition */ = {
+			isa = PBXGroup;
+			children = (
+				7ED76B001FA3321A000B8DEF /* TLAnimationTransitionViewController.h */,
+				7ED76B011FA3321A000B8DEF /* TLAnimationTransitionViewController.m */,
+				7ED76B061FA3333D000B8DEF /* TLCloseAnimationViewController.h */,
+				7ED76B071FA3333D000B8DEF /* TLCloseAnimationViewController.m */,
+			);
+			path = "Animation Transition";
+			sourceTree = "<group>";
+		};
+		7ED76AFF1FA331EC000B8DEF /* Animation UIControls */ = {
+			isa = PBXGroup;
+			children = (
+				7ED76B031FA33238000B8DEF /* TLAnimationUIControlsViewController.h */,
+				7ED76B041FA33238000B8DEF /* TLAnimationUIControlsViewController.m */,
+			);
+			path = "Animation UIControls";
+			sourceTree = "<group>";
+		};
+		C54B5D3AC106EBF831ED5CB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C0FD38ABCBE85715CCB3824 /* Pods-TLSurveyLottie.debug.xcconfig */,
+				BB1A63B3FFC9FA695629B457 /* Pods-TLSurveyLottie.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C66FB07C262C7E3FC3AAF221 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ED76B0A1FA36F57000B8DEF /* Lottie.framework */,
+				7ED76AFC1FA33097000B8DEF /* MobileCoreServices.framework */,
+				7ED76AF41FA3263F000B8DEF /* CoreGraphics.framework */,
+				7ED76AF21FA32628000B8DEF /* AVFoundation.framework */,
+				644907A6799B797BB6788B1B /* Pods_TLSurveyLottie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E87B3E71FA2EDCF008C391C /* TLSurveyLottie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E87B4141FA2EDD0008C391C /* Build configuration list for PBXNativeTarget "TLSurveyLottie" */;
+			buildPhases = (
+				4ED696D5AEC84DBB83826876 /* [CP] Check Pods Manifest.lock */,
+				7E87B3E41FA2EDCF008C391C /* Sources */,
+				7E87B3E51FA2EDCF008C391C /* Frameworks */,
+				7E87B3E61FA2EDCF008C391C /* Resources */,
+				E0BB1E80B0AEC1F7085E9F5F /* [CP] Embed Pods Frameworks */,
+				AF24D35E2CA4F42F5EE0F067 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TLSurveyLottie;
+			productName = TLSurveyLottie;
+			productReference = 7E87B3E81FA2EDCF008C391C /* TLSurveyLottie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E87B3FF1FA2EDCF008C391C /* TLSurveyLottieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E87B4171FA2EDD0008C391C /* Build configuration list for PBXNativeTarget "TLSurveyLottieTests" */;
+			buildPhases = (
+				7E87B3FC1FA2EDCF008C391C /* Sources */,
+				7E87B3FD1FA2EDCF008C391C /* Frameworks */,
+				7E87B3FE1FA2EDCF008C391C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E87B4021FA2EDCF008C391C /* PBXTargetDependency */,
+			);
+			name = TLSurveyLottieTests;
+			productName = TLSurveyLottieTests;
+			productReference = 7E87B4001FA2EDCF008C391C /* TLSurveyLottieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7E87B40A1FA2EDD0008C391C /* TLSurveyLottieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E87B41A1FA2EDD0008C391C /* Build configuration list for PBXNativeTarget "TLSurveyLottieUITests" */;
+			buildPhases = (
+				7E87B4071FA2EDD0008C391C /* Sources */,
+				7E87B4081FA2EDD0008C391C /* Frameworks */,
+				7E87B4091FA2EDD0008C391C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E87B40D1FA2EDD0008C391C /* PBXTargetDependency */,
+			);
+			name = TLSurveyLottieUITests;
+			productName = TLSurveyLottieUITests;
+			productReference = 7E87B40B1FA2EDD0008C391C /* TLSurveyLottieUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E87B3E01FA2EDCF008C391C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TL;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = lichuanjun;
+				TargetAttributes = {
+					7E87B3E71FA2EDCF008C391C = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					7E87B3FF1FA2EDCF008C391C = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7E87B3E71FA2EDCF008C391C;
+					};
+					7E87B40A1FA2EDD0008C391C = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7E87B3E71FA2EDCF008C391C;
+					};
+				};
+			};
+			buildConfigurationList = 7E87B3E31FA2EDCF008C391C /* Build configuration list for PBXProject "TLSurveyLottie" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E87B3DF1FA2EDCF008C391C;
+			productRefGroup = 7E87B3E91FA2EDCF008C391C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E87B3E71FA2EDCF008C391C /* TLSurveyLottie */,
+				7E87B3FF1FA2EDCF008C391C /* TLSurveyLottieTests */,
+				7E87B40A1FA2EDD0008C391C /* TLSurveyLottieUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E87B3E61FA2EDCF008C391C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ED76ADC1FA3162D000B8DEF /* R.json in Resources */,
+				7ED76AD21FA3162D000B8DEF /* H.json in Resources */,
+				7ED76AD01FA3162D000B8DEF /* F.json in Resources */,
+				7ED76AC91FA3162D000B8DEF /* B.json in Resources */,
+				7ED76ACC1FA3162D000B8DEF /* Colon.json in Resources */,
+				7ED76AE11FA3162D000B8DEF /* W.json in Resources */,
+				7ED76AC21FA3162D000B8DEF /* MotionCorpse-Jrcanest.json in Resources */,
+				7ED76AD81FA3162D000B8DEF /* N.json in Resources */,
+				7ED76AD71FA3162D000B8DEF /* M.json in Resources */,
+				7ED76ACD1FA3162D000B8DEF /* Comma.json in Resources */,
+				7ED76AD11FA3162D000B8DEF /* G.json in Resources */,
+				7E87B3F81FA2EDCF008C391C /* LaunchScreen.storyboard in Resources */,
+				7ED76ABF1FA3162D000B8DEF /* LottieLogo1.json in Resources */,
+				7ED76AC71FA3162D000B8DEF /* A.json in Resources */,
+				7ED76ABE1FA3162D000B8DEF /* IconTransitions.json in Resources */,
+				7ED76AE51FA3162D000B8DEF /* vcTransition1.json in Resources */,
+				7ED76AE61FA3162D000B8DEF /* vcTransition2.json in Resources */,
+				7ED76ADB1FA3162D000B8DEF /* Q.json in Resources */,
+				7E87B3F51FA2EDCF008C391C /* Assets.xcassets in Resources */,
+				7ED76ACB1FA3162D000B8DEF /* C.json in Resources */,
+				7ED76ADD1FA3162D000B8DEF /* S.json in Resources */,
+				7ED76AE21FA3162D000B8DEF /* X.json in Resources */,
+				7ED76AD31FA3162D000B8DEF /* I.json in Resources */,
+				7ED76AC11FA3162D000B8DEF /* LottieLogo2.json in Resources */,
+				7ED76ADA1FA3162D000B8DEF /* P.json in Resources */,
+				7ED76AE41FA3162D000B8DEF /* Z.json in Resources */,
+				7ED76AC81FA3162D000B8DEF /* Apostrophe.json in Resources */,
+				7ED76AC01FA3162D000B8DEF /* LottieLogo1_masked.json in Resources */,
+				7ED76AC51FA3162D000B8DEF /* Switch_States.json in Resources */,
+				7ED76ACE1FA3162D000B8DEF /* D.json in Resources */,
+				7ED76AC31FA3162D000B8DEF /* PinJump.json in Resources */,
+				7ED76AE01FA3162D000B8DEF /* V.json in Resources */,
+				7ED76AC61FA3162D000B8DEF /* TwitterHeart.json in Resources */,
+				7ED76AD51FA3162D000B8DEF /* K.json in Resources */,
+				7ED76AD61FA3162D000B8DEF /* L.json in Resources */,
+				7ED76AE71FA3162D000B8DEF /* Watermelon.json in Resources */,
+				7ED76ACF1FA3162D000B8DEF /* E.json in Resources */,
+				7ED76AC41FA3162D000B8DEF /* Switch.json in Resources */,
+				7ED76ACA1FA3162D000B8DEF /* BlinkingCursor.json in Resources */,
+				7ED76AE31FA3162D000B8DEF /* Y.json in Resources */,
+				7ED76ABC1FA3162D000B8DEF /* 9squares-AlBoardman.json in Resources */,
+				7ED76ADE1FA3162D000B8DEF /* T.json in Resources */,
+				7ED76AD91FA3162D000B8DEF /* O.json in Resources */,
+				7ED76ABD1FA3162D000B8DEF /* HamburgerArrow.json in Resources */,
+				7ED76AD41FA3162D000B8DEF /* J.json in Resources */,
+				7ED76ADF1FA3162D000B8DEF /* U.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E87B3FE1FA2EDCF008C391C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E87B4091FA2EDD0008C391C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4ED696D5AEC84DBB83826876 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TLSurveyLottie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF24D35E2CA4F42F5EE0F067 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TLSurveyLottie/Pods-TLSurveyLottie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0BB1E80B0AEC1F7085E9F5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TLSurveyLottie/Pods-TLSurveyLottie-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Mantle/Mantle.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mantle.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TLSurveyLottie/Pods-TLSurveyLottie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E87B3E41FA2EDCF008C391C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ED76B081FA3333D000B8DEF /* TLCloseAnimationViewController.m in Sources */,
+				7E87B3F01FA2EDCF008C391C /* TLRootViewController.m in Sources */,
+				7ED76A8A1FA314D7000B8DEF /* TLJSONExplorerViewController.m in Sources */,
+				7ED76A8D1FA314E9000B8DEF /* TLQRScannerViewController.m in Sources */,
+				7ED76A831FA312BB000B8DEF /* TLDetailViewController.m in Sources */,
+				7ED76AFA1FA3287D000B8DEF /* TLAnimatedTextField.m in Sources */,
+				7E87B3FB1FA2EDCF008C391C /* main.m in Sources */,
+				7ED76AFB1FA3287D000B8DEF /* TLAnimationKeyboardViewController.m in Sources */,
+				7ED76A871FA313AA000B8DEF /* TLAnimationExplorerViewController.m in Sources */,
+				7ED76B021FA3321A000B8DEF /* TLAnimationTransitionViewController.m in Sources */,
+				7E87B3ED1FA2EDCF008C391C /* TLAppDelegate.m in Sources */,
+				7ED76B051FA33238000B8DEF /* TLAnimationUIControlsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E87B3FC1FA2EDCF008C391C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E87B4051FA2EDCF008C391C /* TLSurveyLottieTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E87B4071FA2EDD0008C391C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E87B4101FA2EDD0008C391C /* TLSurveyLottieUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E87B4021FA2EDCF008C391C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E87B3E71FA2EDCF008C391C /* TLSurveyLottie */;
+			targetProxy = 7E87B4011FA2EDCF008C391C /* PBXContainerItemProxy */;
+		};
+		7E87B40D1FA2EDD0008C391C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E87B3E71FA2EDCF008C391C /* TLSurveyLottie */;
+			targetProxy = 7E87B40C1FA2EDD0008C391C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E87B3F61FA2EDCF008C391C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E87B3F71FA2EDCF008C391C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E87B4121FA2EDD0008C391C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7E87B4131FA2EDD0008C391C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E87B4151FA2EDD0008C391C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C0FD38ABCBE85715CCB3824 /* Pods-TLSurveyLottie.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TLSurveyLottie/TLSurveyLottie-Prefix.pch";
+				INFOPLIST_FILE = TLSurveyLottie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leecj.TLSurveyLottie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E87B4161FA2EDD0008C391C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB1A63B3FFC9FA695629B457 /* Pods-TLSurveyLottie.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TLSurveyLottie/TLSurveyLottie-Prefix.pch";
+				INFOPLIST_FILE = TLSurveyLottie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leecj.TLSurveyLottie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7E87B4181FA2EDD0008C391C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TLSurveyLottieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leecj.TLSurveyLottieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TLSurveyLottie.app/TLSurveyLottie";
+			};
+			name = Debug;
+		};
+		7E87B4191FA2EDD0008C391C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TLSurveyLottieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leecj.TLSurveyLottieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TLSurveyLottie.app/TLSurveyLottie";
+			};
+			name = Release;
+		};
+		7E87B41B1FA2EDD0008C391C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TLSurveyLottieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leecj.TLSurveyLottieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TLSurveyLottie;
+			};
+			name = Debug;
+		};
+		7E87B41C1FA2EDD0008C391C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TLSurveyLottieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leecj.TLSurveyLottieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TLSurveyLottie;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E87B3E31FA2EDCF008C391C /* Build configuration list for PBXProject "TLSurveyLottie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E87B4121FA2EDD0008C391C /* Debug */,
+				7E87B4131FA2EDD0008C391C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E87B4141FA2EDD0008C391C /* Build configuration list for PBXNativeTarget "TLSurveyLottie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E87B4151FA2EDD0008C391C /* Debug */,
+				7E87B4161FA2EDD0008C391C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E87B4171FA2EDD0008C391C /* Build configuration list for PBXNativeTarget "TLSurveyLottieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E87B4181FA2EDD0008C391C /* Debug */,
+				7E87B4191FA2EDD0008C391C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E87B41A1FA2EDD0008C391C /* Build configuration list for PBXNativeTarget "TLSurveyLottieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E87B41B1FA2EDD0008C391C /* Debug */,
+				7E87B41C1FA2EDD0008C391C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E87B3E01FA2EDCF008C391C /* Project object */;
+}
