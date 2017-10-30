@@ -15,14 +15,8 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-
-// third library
-#import <Masonry/Masonry.h>
-#import <Mantle/Mantle.h>
-#import <Mantle/EXTScope.h>
-#import <Mantle/EXTKeyPathCoding.h>
 #endif
 
-#import <Lottie/Lottie.h>
+#import "TLHeaderFile.h"
 
 #endif /* TLSurveyLottie_Prefix_pch */

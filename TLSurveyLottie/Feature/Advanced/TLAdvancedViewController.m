@@ -1,18 +1,18 @@
 //
-//  TLDetailViewController.m
-//  TLBuriedPoint
+//  TLAdvancedViewController.m
+//  TLSurveyLottie
 //
-//  Created by lichuanjun on 2017/10/26.
+//  Created by lichuanjun on 2017/10/30.
 //  Copyright © 2017年 lichuanjun. All rights reserved.
 //
 
-#import "TLDetailViewController.h"
+#import "TLAdvancedViewController.h"
 
-@interface TLDetailViewController ()
+@interface TLAdvancedViewController ()
 
 @end
 
-@implementation TLDetailViewController
+@implementation TLAdvancedViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

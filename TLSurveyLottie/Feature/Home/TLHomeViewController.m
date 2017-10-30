@@ -1,21 +1,21 @@
 //
-//  TLRootViewController.m
+//  TLHomeViewController.m
 //  TLSurveyLottie
 //
-//  Created by lichuanjun on 2017/10/27.
+//  Created by lichuanjun on 2017/10/30.
 //  Copyright © 2017年 lichuanjun. All rights reserved.
 //
 
-#import "TLRootViewController.h"
+#import "TLHomeViewController.h"
 #import "TLAppDelegate.h"
 
-@interface TLRootViewController ()
+@interface TLHomeViewController ()
 
 @property (nonatomic, strong) NSMutableArray *tableItems;
 
 @end
 
-@implementation TLRootViewController
+@implementation TLHomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,7 +33,7 @@
                       ];
     
     [self.tableItems addObject:item];
-
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -65,7 +65,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-
+    
     NSArray *itemArray = self.tableItems[indexPath.section];
     cell.textLabel.text = itemArray[indexPath.row][@"name"];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;

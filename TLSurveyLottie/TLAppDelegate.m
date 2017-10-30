@@ -7,8 +7,7 @@
 //
 
 #import "TLAppDelegate.h"
-#import "TLRootViewController.h"
-#import "TLDetailViewController.h"
+#import "TLGuideViewController.h"
 
 @interface TLAppDelegate ()
 
@@ -16,19 +15,10 @@
 
 @implementation TLAppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[UINavigationController alloc] initWithRootViewController:[[TLRootViewController alloc] init]];
-    } else if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        UISplitViewController *splitViewController = [[UISplitViewController alloc] init];
-        UINavigationController *leftNavigationController = [[UINavigationController alloc] initWithRootViewController:[[TLRootViewController alloc] init]];
-        UINavigationController *rightNavigationController = [[UINavigationController alloc] initWithRootViewController:[[TLDetailViewController alloc] init]];
-        splitViewController.viewControllers = [NSArray arrayWithObjects:leftNavigationController, rightNavigationController, nil];
-        self.viewController = splitViewController;
-    }
+    self.viewController = [[TLGuideViewController alloc] init];
     self.window.rootViewController = self.viewController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
