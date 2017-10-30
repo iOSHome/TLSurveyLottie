@@ -38,7 +38,7 @@
 
 //首页
 #define TLGymInfoViewHeight TLHeight(315)
-#define TLZoomCycleImgViewHeight TLHeight(175)
+#define TLZoomCycleImageViewHeight TLHeight(175)
 #define TLFitnessStatusViewHeight TLHeight(225)
 #define TLGymClassCellHeight TLHeight(255)
 #define TLHomeTitleHeight TLHeight(50)

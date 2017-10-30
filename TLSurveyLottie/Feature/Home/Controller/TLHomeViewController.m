@@ -8,17 +8,32 @@
 
 #import "TLHomeViewController.h"
 #import "TLAppDelegate.h"
+#import "TLZoomCycleImageView.h"
 
 @interface TLHomeViewController ()
 
 @property (nonatomic, strong) NSMutableArray *tableItems;
 
+@property (nonatomic, strong) TLZoomCycleImageView *zoomCycleImageView;
+
 @end
 
 @implementation TLHomeViewController
 
+-(instancetype)init {
+    self = [super init];
+    if (self) {
+        self.title = @"Lottle";
+    }
+    
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self setupZoomCycleImageView];
+    
     self.tableItems = @[].mutableCopy;
     
     NSArray *item = @[
@@ -33,19 +48,36 @@
                       ];
     
     [self.tableItems addObject:item];
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
-    self.title = @"Lottle Demo";
+
     self.navigationController.navigationBarHidden = NO;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)setupZoomCycleImageView{
+
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, TLScreenWidth, TLZoomCycleImageViewHeight + 2 * TLPadding + 1)];
+    headerView.backgroundColor = [UIColor clearColor];
+    
+    _zoomCycleImageView = [[TLZoomCycleImageView alloc] initWithFrame:CGRectMake(0, TLPadding, TLScreenWidth, TLZoomCycleImageViewHeight)];
+    _zoomCycleImageView.picArray = @[[UIImage imageNamed:@"banner1"], [UIImage imageNamed:@"banner2"]];
+    [headerView addSubview:_zoomCycleImageView];
+    [_zoomCycleImageView setClickedCell:^(NSInteger index){
+        NSLog(@"%ld",(long)index);
+    }];
+    
+    UIView *line = [[UIView alloc] initWithFrame:CGRectMake(TLPadding, _zoomCycleImageView.bottom + TLPadding, TLScreenWidth, 1)];
+    line.backgroundColor = [TLBlackColor colorWithAlphaComponent:0.05];
+    [headerView addSubview:line];
+    
+    self.tableView.tableHeaderView = headerView;
 }
 
 #pragma mark - Table view data source
@@ -97,8 +129,8 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     
     UILabel *lblTitle = [[UILabel alloc] init];
-    lblTitle.backgroundColor = [UIColor grayColor];
-    lblTitle.textColor = [UIColor whiteColor];
+    lblTitle.backgroundColor = [UIColor whiteColor];
+    lblTitle.textColor = [UIColor grayColor];
     
     switch (section) {
         case 0:
@@ -119,7 +151,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 22.0f;
+    return 35.0f;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {

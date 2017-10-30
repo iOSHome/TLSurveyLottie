@@ -7,7 +7,6 @@
 //
 
 #import "TLGuideViewController.h"
-#import "TLRootViewController.h"
 #import "TLHomeViewController.h"
 #import "TLAdvancedViewController.h"
 #import "TLProfileViewController.h"

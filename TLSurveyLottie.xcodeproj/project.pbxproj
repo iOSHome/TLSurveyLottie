@@ -98,6 +98,8 @@
 		7ED76B791FA6FDBF000B8DEF /* UIBarButtonItem+TLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76B781FA6FDBF000B8DEF /* UIBarButtonItem+TLExtension.m */; };
 		7ED76B7C1FA6FDF6000B8DEF /* UIImage+TLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76B7B1FA6FDF6000B8DEF /* UIImage+TLExtension.m */; };
 		7ED76B7F1FA6FE30000B8DEF /* UIView+TLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76B7E1FA6FE30000B8DEF /* UIView+TLExtension.m */; };
+		7ED76B841FA70C08000B8DEF /* TLZoomCycleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76B831FA70C08000B8DEF /* TLZoomCycleImageView.m */; };
+		7ED76B871FA70C5A000B8DEF /* TLZoomCycleImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76B861FA70C5A000B8DEF /* TLZoomCycleImageCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -242,6 +244,10 @@
 		7ED76B7B1FA6FDF6000B8DEF /* UIImage+TLExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TLExtension.m"; sourceTree = "<group>"; };
 		7ED76B7D1FA6FE30000B8DEF /* UIView+TLExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+TLExtension.h"; sourceTree = "<group>"; };
 		7ED76B7E1FA6FE30000B8DEF /* UIView+TLExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TLExtension.m"; sourceTree = "<group>"; };
+		7ED76B821FA70C08000B8DEF /* TLZoomCycleImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLZoomCycleImageView.h; sourceTree = "<group>"; };
+		7ED76B831FA70C08000B8DEF /* TLZoomCycleImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLZoomCycleImageView.m; sourceTree = "<group>"; };
+		7ED76B851FA70C5A000B8DEF /* TLZoomCycleImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLZoomCycleImageCell.h; sourceTree = "<group>"; };
+		7ED76B861FA70C5A000B8DEF /* TLZoomCycleImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLZoomCycleImageCell.m; sourceTree = "<group>"; };
 		BB1A63B3FFC9FA695629B457 /* Pods-TLSurveyLottie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLSurveyLottie.release.xcconfig"; path = "Pods/Target Support Files/Pods-TLSurveyLottie/Pods-TLSurveyLottie.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -600,8 +606,8 @@
 		7ED76B631FA6FAC9000B8DEF /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				7ED76B641FA6FAEF000B8DEF /* TLHomeViewController.h */,
-				7ED76B651FA6FAEF000B8DEF /* TLHomeViewController.m */,
+				7ED76B811FA70BD2000B8DEF /* Controller */,
+				7ED76B801FA70BC8000B8DEF /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -613,6 +619,26 @@
 				7ED76B6F1FA6FC43000B8DEF /* TLNavigationController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		7ED76B801FA70BC8000B8DEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7ED76B821FA70C08000B8DEF /* TLZoomCycleImageView.h */,
+				7ED76B831FA70C08000B8DEF /* TLZoomCycleImageView.m */,
+				7ED76B851FA70C5A000B8DEF /* TLZoomCycleImageCell.h */,
+				7ED76B861FA70C5A000B8DEF /* TLZoomCycleImageCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7ED76B811FA70BD2000B8DEF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7ED76B641FA6FAEF000B8DEF /* TLHomeViewController.h */,
+				7ED76B651FA6FAEF000B8DEF /* TLHomeViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		C54B5D3AC106EBF831ED5CB3 /* Pods */ = {
@@ -896,6 +922,7 @@
 				7ED76B081FA3333D000B8DEF /* TLCloseAnimationViewController.m in Sources */,
 				7ED76B7F1FA6FE30000B8DEF /* UIView+TLExtension.m in Sources */,
 				7ED76A8A1FA314D7000B8DEF /* TLJSONExplorerViewController.m in Sources */,
+				7ED76B871FA70C5A000B8DEF /* TLZoomCycleImageCell.m in Sources */,
 				7ED76B661FA6FAEF000B8DEF /* TLHomeViewController.m in Sources */,
 				7ED76B6C1FA6FB12000B8DEF /* TLProfileViewController.m in Sources */,
 				7ED76B561FA6D5F4000B8DEF /* TLGuideViewController.m in Sources */,
@@ -913,6 +940,7 @@
 				7E87B3ED1FA2EDCF008C391C /* TLAppDelegate.m in Sources */,
 				7ED76B701FA6FC43000B8DEF /* TLNavigationController.m in Sources */,
 				7ED76B7C1FA6FDF6000B8DEF /* UIImage+TLExtension.m in Sources */,
+				7ED76B841FA70C08000B8DEF /* TLZoomCycleImageView.m in Sources */,
 				7ED76B051FA33238000B8DEF /* TLAnimationUIControlsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
