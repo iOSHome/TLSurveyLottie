@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		77D77654102AD51DCD9CA75B /* Pods_TLSurveyLottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 644907A6799B797BB6788B1B /* Pods_TLSurveyLottie.framework */; };
 		7E87B3ED1FA2EDCF008C391C /* TLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E87B3EC1FA2EDCF008C391C /* TLAppDelegate.m */; };
-		7E87B3F01FA2EDCF008C391C /* TLRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E87B3EF1FA2EDCF008C391C /* TLRootViewController.m */; };
 		7E87B3F51FA2EDCF008C391C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E87B3F41FA2EDCF008C391C /* Assets.xcassets */; };
 		7E87B3F81FA2EDCF008C391C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E87B3F61FA2EDCF008C391C /* LaunchScreen.storyboard */; };
 		7E87B3FB1FA2EDCF008C391C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E87B3FA1FA2EDCF008C391C /* main.m */; };
@@ -124,8 +123,6 @@
 		7E87B3E81FA2EDCF008C391C /* TLSurveyLottie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLSurveyLottie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E87B3EB1FA2EDCF008C391C /* TLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLAppDelegate.h; sourceTree = "<group>"; };
 		7E87B3EC1FA2EDCF008C391C /* TLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLAppDelegate.m; sourceTree = "<group>"; };
-		7E87B3EE1FA2EDCF008C391C /* TLRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLRootViewController.h; sourceTree = "<group>"; };
-		7E87B3EF1FA2EDCF008C391C /* TLRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLRootViewController.m; sourceTree = "<group>"; };
 		7E87B3F41FA2EDCF008C391C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E87B3F71FA2EDCF008C391C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E87B3F91FA2EDCF008C391C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -310,8 +307,6 @@
 				7ED76A841FA31391000B8DEF /* Animation Explorer */,
 				7E87B3EB1FA2EDCF008C391C /* TLAppDelegate.h */,
 				7E87B3EC1FA2EDCF008C391C /* TLAppDelegate.m */,
-				7E87B3EE1FA2EDCF008C391C /* TLRootViewController.h */,
-				7E87B3EF1FA2EDCF008C391C /* TLRootViewController.m */,
 				7E87B3F41FA2EDCF008C391C /* Assets.xcassets */,
 				7E87B3F61FA2EDCF008C391C /* LaunchScreen.storyboard */,
 				7E87B3F91FA2EDCF008C391C /* Info.plist */,
@@ -899,7 +894,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ED76B081FA3333D000B8DEF /* TLCloseAnimationViewController.m in Sources */,
-				7E87B3F01FA2EDCF008C391C /* TLRootViewController.m in Sources */,
 				7ED76B7F1FA6FE30000B8DEF /* UIView+TLExtension.m in Sources */,
 				7ED76A8A1FA314D7000B8DEF /* TLJSONExplorerViewController.m in Sources */,
 				7ED76B661FA6FAEF000B8DEF /* TLHomeViewController.m in Sources */,
