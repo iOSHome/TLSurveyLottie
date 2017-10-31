@@ -7,5 +7,6 @@ target :TLSurveyLottie do
   pod 'lottie-ios', '~> 2.1.3'
   pod 'Mantle', '<= 1.5'
   pod 'Masonry', '~> 1.0.1'
+  pod 'Aspects', '~> 1.4.1'
   
 end
