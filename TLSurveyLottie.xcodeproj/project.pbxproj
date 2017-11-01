@@ -488,6 +488,19 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
+		7E54392B1FA96D4A00AF27FD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7E87B3EB1FA2EDCF008C391C /* TLAppDelegate.h */,
+				7E87B3EC1FA2EDCF008C391C /* TLAppDelegate.m */,
+				7E87B3FA1FA2EDCF008C391C /* main.m */,
+				7E87B3F91FA2EDCF008C391C /* Info.plist */,
+				7E87B3F41FA2EDCF008C391C /* Assets.xcassets */,
+				7E87B3F61FA2EDCF008C391C /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		7E87B3DF1FA2EDCF008C391C = {
 			isa = PBXGroup;
 			children = (
@@ -513,17 +526,12 @@
 		7E87B3EA1FA2EDCF008C391C /* TLSurveyLottie */ = {
 			isa = PBXGroup;
 			children = (
+				7E54392B1FA96D4A00AF27FD /* Application */,
 				7E54392A1FA96C2D00AF27FD /* Animations */,
 				7ED76B5B1FA6F5DD000B8DEF /* TLPrefix */,
 				7ED76B571FA6F372000B8DEF /* TLCategory */,
-				7ED76B601FA6FA36000B8DEF /* Feature */,
+				7ED76B601FA6FA36000B8DEF /* Modules */,
 				7ED76A8E1FA3162D000B8DEF /* Resources */,
-				7E87B3EB1FA2EDCF008C391C /* TLAppDelegate.h */,
-				7E87B3EC1FA2EDCF008C391C /* TLAppDelegate.m */,
-				7E87B3FA1FA2EDCF008C391C /* main.m */,
-				7E87B3F41FA2EDCF008C391C /* Assets.xcassets */,
-				7E87B3F61FA2EDCF008C391C /* LaunchScreen.storyboard */,
-				7E87B3F91FA2EDCF008C391C /* Info.plist */,
 			);
 			path = TLSurveyLottie;
 			sourceTree = "<group>";
@@ -640,7 +648,7 @@
 			path = TLPrefix;
 			sourceTree = "<group>";
 		};
-		7ED76B601FA6FA36000B8DEF /* Feature */ = {
+		7ED76B601FA6FA36000B8DEF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				7ED76B6D1FA6FC1E000B8DEF /* Base */,
@@ -649,7 +657,7 @@
 				7ED76B611FA6FAB7000B8DEF /* Advanced */,
 				7ED76B621FA6FAC2000B8DEF /* Profile */,
 			);
-			path = Feature;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		7ED76B611FA6FAB7000B8DEF /* Advanced */ = {
@@ -1199,7 +1207,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TLSurveyLottie/TLPrefix/TLSurveyLottie-Prefix.pch";
-				INFOPLIST_FILE = TLSurveyLottie/Info.plist;
+				INFOPLIST_FILE = TLSurveyLottie/Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.leecj.TLSurveyLottie;
@@ -1217,7 +1225,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TLSurveyLottie/TLPrefix/TLSurveyLottie-Prefix.pch";
-				INFOPLIST_FILE = TLSurveyLottie/Info.plist;
+				INFOPLIST_FILE = TLSurveyLottie/Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.leecj.TLSurveyLottie;
