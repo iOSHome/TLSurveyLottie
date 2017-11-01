@@ -52,7 +52,7 @@
                       ];
     
     NSArray *item2 = @[
-                      @{@"name" : @"Animated Loading",
+                      @{@"name" : @"Animated Loading+Tips",
                         @"vc" : @"TLLoadingAnimationViewController"}
                       ];
     
