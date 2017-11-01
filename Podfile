@@ -8,5 +8,7 @@ target :TLSurveyLottie do
   pod 'Mantle', '<= 1.5'
   pod 'Masonry', '~> 1.0.1'
   pod 'Aspects', '~> 1.4.1'
+  pod 'MJRefresh', '~> 3.1.15'
+  pod 'MBProgressHUD', '~> 1.0.0'
   
 end

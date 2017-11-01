@@ -128,7 +128,7 @@
     
     [self.view addSubview:_launchMask];
     
-    _launchAnimation = [LOTAnimationView animationNamed:@"data"];
+    _launchAnimation = [LOTAnimationView animationNamed:@"Launch"];
     _launchAnimation.cacheEnable = NO;
     _launchAnimation.frame = self.view.bounds;
     _launchAnimation.contentMode = UIViewContentModeScaleToFill;

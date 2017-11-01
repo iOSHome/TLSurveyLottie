@@ -8,9 +8,13 @@
 
 #import "TLHomeViewController.h"
 #import "TLAppDelegate.h"
+#import "TLAnimationRefreshHeader.h"
+#import "TLAnimationRefreshFooter.h"
 
-@interface TLHomeViewController ()
 
+@interface TLHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *tableItems;
 
 @end
@@ -29,6 +33,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.tableView.tableFooterView = [[UIView alloc] init];
+    [self.view addSubview:self.tableView];
+    
     self.tableItems = @[].mutableCopy;
     
     NSArray *item = @[
@@ -43,6 +53,20 @@
                       ];
     
     [self.tableItems addObject:item];
+    
+    
+    @weakify(self);
+    TLAnimationRefreshHeader *refreshHeader = [TLAnimationRefreshHeader headerWithRefreshingBlock:^{
+        @strongify(self);
+        [self loadData];
+    }];
+    [self.tableView setMj_header:refreshHeader];
+    
+    TLAnimationRefreshFooter *refreshFooter = [TLAnimationRefreshFooter footerWithRefreshingBlock:^{
+        @strongify(self);
+        [self loadMoreData];
+    }];
+    [self.tableView setMj_footer:refreshFooter];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -54,6 +78,19 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Private Methods
+- (void)loadData {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.tableView.mj_header endRefreshing];
+    });
+}
+
+- (void)loadMoreData {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.tableView.mj_footer endRefreshing];
+    });
 }
 
 #pragma mark - Table view data source
