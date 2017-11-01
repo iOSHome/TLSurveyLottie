@@ -1,5 +1,5 @@
 //
-//  TLAnimationUIControlsViewController.h
+//  TLAnimationUIControlViewController.h
 //  TLSurveyLottie
 //
 //  Created by lichuanjun on 2017/10/27.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TLAnimationUIControlsViewController : UIViewController
+@interface TLAnimationUIControlViewController : UIViewController
 
 @end

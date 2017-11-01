@@ -85,6 +85,7 @@
 		7E5439291FA963D100AF27FD /* SwitchControl.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E5439281FA963D100AF27FD /* SwitchControl.json */; };
 		7E54392F1FA96FB200AF27FD /* TLLoadingAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E54392E1FA96FB200AF27FD /* TLLoadingAnimationViewController.m */; };
 		7E5439321FA970AB00AF27FD /* UIView+TLEmptyStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5439311FA970AB00AF27FD /* UIView+TLEmptyStatus.m */; };
+		7E5439351FA9982A00AF27FD /* TLAnimationUIButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5439341FA9982A00AF27FD /* TLAnimationUIButtonViewController.m */; };
 		7E87B3ED1FA2EDCF008C391C /* TLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E87B3EC1FA2EDCF008C391C /* TLAppDelegate.m */; };
 		7E87B3F51FA2EDCF008C391C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E87B3F41FA2EDCF008C391C /* Assets.xcassets */; };
 		7E87B3F81FA2EDCF008C391C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E87B3F61FA2EDCF008C391C /* LaunchScreen.storyboard */; };
@@ -99,7 +100,7 @@
 		7ED76AFA1FA3287D000B8DEF /* TLAnimatedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76AF71FA3287C000B8DEF /* TLAnimatedTextField.m */; };
 		7ED76AFB1FA3287D000B8DEF /* TLAnimationKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76AF91FA3287D000B8DEF /* TLAnimationKeyboardViewController.m */; };
 		7ED76B021FA3321A000B8DEF /* TLAnimationTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76B011FA3321A000B8DEF /* TLAnimationTransitionViewController.m */; };
-		7ED76B051FA33238000B8DEF /* TLAnimationUIControlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76B041FA33238000B8DEF /* TLAnimationUIControlsViewController.m */; };
+		7ED76B051FA33238000B8DEF /* TLAnimationUIControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76B041FA33238000B8DEF /* TLAnimationUIControlViewController.m */; };
 		7ED76B081FA3333D000B8DEF /* TLCloseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76B071FA3333D000B8DEF /* TLCloseAnimationViewController.m */; };
 		7ED76B561FA6D5F4000B8DEF /* TLGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76B551FA6D5F4000B8DEF /* TLGuideViewController.m */; };
 		7ED76B5A1FA6F399000B8DEF /* NSObject+TLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76B591FA6F399000B8DEF /* NSObject+TLExtension.m */; };
@@ -217,6 +218,8 @@
 		7E54392E1FA96FB200AF27FD /* TLLoadingAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLLoadingAnimationViewController.m; sourceTree = "<group>"; };
 		7E5439301FA970AB00AF27FD /* UIView+TLEmptyStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+TLEmptyStatus.h"; sourceTree = "<group>"; };
 		7E5439311FA970AB00AF27FD /* UIView+TLEmptyStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TLEmptyStatus.m"; sourceTree = "<group>"; };
+		7E5439331FA9982A00AF27FD /* TLAnimationUIButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLAnimationUIButtonViewController.h; sourceTree = "<group>"; };
+		7E5439341FA9982A00AF27FD /* TLAnimationUIButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLAnimationUIButtonViewController.m; sourceTree = "<group>"; };
 		7E87B3E81FA2EDCF008C391C /* TLSurveyLottie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLSurveyLottie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E87B3EB1FA2EDCF008C391C /* TLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLAppDelegate.h; sourceTree = "<group>"; };
 		7E87B3EC1FA2EDCF008C391C /* TLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLAppDelegate.m; sourceTree = "<group>"; };
@@ -246,8 +249,8 @@
 		7ED76AFC1FA33097000B8DEF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		7ED76B001FA3321A000B8DEF /* TLAnimationTransitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLAnimationTransitionViewController.h; sourceTree = "<group>"; };
 		7ED76B011FA3321A000B8DEF /* TLAnimationTransitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLAnimationTransitionViewController.m; sourceTree = "<group>"; };
-		7ED76B031FA33238000B8DEF /* TLAnimationUIControlsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLAnimationUIControlsViewController.h; sourceTree = "<group>"; };
-		7ED76B041FA33238000B8DEF /* TLAnimationUIControlsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLAnimationUIControlsViewController.m; sourceTree = "<group>"; };
+		7ED76B031FA33238000B8DEF /* TLAnimationUIControlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLAnimationUIControlViewController.h; sourceTree = "<group>"; };
+		7ED76B041FA33238000B8DEF /* TLAnimationUIControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLAnimationUIControlViewController.m; sourceTree = "<group>"; };
 		7ED76B061FA3333D000B8DEF /* TLCloseAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLCloseAnimationViewController.h; sourceTree = "<group>"; };
 		7ED76B071FA3333D000B8DEF /* TLCloseAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLCloseAnimationViewController.m; sourceTree = "<group>"; };
 		7ED76B0A1FA36F57000B8DEF /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -621,8 +624,10 @@
 		7ED76AFF1FA331EC000B8DEF /* UIControls */ = {
 			isa = PBXGroup;
 			children = (
-				7ED76B031FA33238000B8DEF /* TLAnimationUIControlsViewController.h */,
-				7ED76B041FA33238000B8DEF /* TLAnimationUIControlsViewController.m */,
+				7ED76B031FA33238000B8DEF /* TLAnimationUIControlViewController.h */,
+				7ED76B041FA33238000B8DEF /* TLAnimationUIControlViewController.m */,
+				7E5439331FA9982A00AF27FD /* TLAnimationUIButtonViewController.h */,
+				7E5439341FA9982A00AF27FD /* TLAnimationUIButtonViewController.m */,
 			);
 			path = UIControls;
 			sourceTree = "<group>";
@@ -1059,6 +1064,7 @@
 				7ED76B5A1FA6F399000B8DEF /* NSObject+TLExtension.m in Sources */,
 				7E87B3FB1FA2EDCF008C391C /* main.m in Sources */,
 				7ED76AFB1FA3287D000B8DEF /* TLAnimationKeyboardViewController.m in Sources */,
+				7E5439351FA9982A00AF27FD /* TLAnimationUIButtonViewController.m in Sources */,
 				7ED76B761FA6FD86000B8DEF /* NSDateFormatter+TLExtension.m in Sources */,
 				7ED76A871FA313AA000B8DEF /* TLAnimationExplorerViewController.m in Sources */,
 				7ED76B021FA3321A000B8DEF /* TLAnimationTransitionViewController.m in Sources */,
@@ -1067,7 +1073,7 @@
 				7ED76B701FA6FC43000B8DEF /* TLNavigationController.m in Sources */,
 				7ED76B7C1FA6FDF6000B8DEF /* UIImage+TLExtension.m in Sources */,
 				7ED76B841FA70C08000B8DEF /* TLZoomCycleImageView.m in Sources */,
-				7ED76B051FA33238000B8DEF /* TLAnimationUIControlsViewController.m in Sources */,
+				7ED76B051FA33238000B8DEF /* TLAnimationUIControlViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

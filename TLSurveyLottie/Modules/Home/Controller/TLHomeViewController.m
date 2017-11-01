@@ -47,13 +47,16 @@
                         @"vc" : @"TLAnimationKeyboardViewController"},
                       @{@"name" : @"Animated Transitions",
                         @"vc" : @"TLAnimationTransitionViewController"},
-                      @{@"name" : @"Animated UIControls",
-                        @"vc" : @"TLAnimationUIControlsViewController"}
+                      @{@"name" : @"Animated UIControl",
+                        @"vc" : @"TLAnimationUIControlViewController"}
                       ];
     
     NSArray *item2 = @[
                       @{@"name" : @"Animated Loading+Tips",
-                        @"vc" : @"TLLoadingAnimationViewController"}
+                        @"vc" : @"TLLoadingAnimationViewController"},
+                      @{@"name" : @"Animation UIButton+Gift",
+                        @"vc" : @"TLAnimationUIButtonViewController"
+                        }
                       ];
     
     [self.tableItems addObjectsFromArray:@[item1, item2]];

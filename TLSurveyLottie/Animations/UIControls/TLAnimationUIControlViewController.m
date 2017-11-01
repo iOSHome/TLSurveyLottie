@@ -6,13 +6,13 @@
 //  Copyright © 2017年 lichuanjun. All rights reserved.
 //
 
-#import "TLAnimationUIControlsViewController.h"
+#import "TLAnimationUIControlViewController.h"
 
-@interface TLAnimationUIControlsViewController ()
+@interface TLAnimationUIControlViewController ()
 
 @end
 
-@implementation TLAnimationUIControlsViewController
+@implementation TLAnimationUIControlViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
