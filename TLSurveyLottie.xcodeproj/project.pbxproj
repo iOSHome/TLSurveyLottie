@@ -83,6 +83,8 @@
 		7E5439251FA9622700AF27FD /* img_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E5438DA1FA9622700AF27FD /* img_3.png */; };
 		7E5439271FA9639800AF27FD /* Launch.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E5439261FA9639800AF27FD /* Launch.json */; };
 		7E5439291FA963D100AF27FD /* SwitchControl.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E5439281FA963D100AF27FD /* SwitchControl.json */; };
+		7E54392F1FA96FB200AF27FD /* TLLoadingAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E54392E1FA96FB200AF27FD /* TLLoadingAnimationViewController.m */; };
+		7E5439321FA970AB00AF27FD /* UIView+TLEmptyStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5439311FA970AB00AF27FD /* UIView+TLEmptyStatus.m */; };
 		7E87B3ED1FA2EDCF008C391C /* TLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E87B3EC1FA2EDCF008C391C /* TLAppDelegate.m */; };
 		7E87B3F51FA2EDCF008C391C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E87B3F41FA2EDCF008C391C /* Assets.xcassets */; };
 		7E87B3F81FA2EDCF008C391C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E87B3F61FA2EDCF008C391C /* LaunchScreen.storyboard */; };
@@ -211,6 +213,10 @@
 		7E5438DA1FA9622700AF27FD /* img_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_3.png; sourceTree = "<group>"; };
 		7E5439261FA9639800AF27FD /* Launch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Launch.json; sourceTree = "<group>"; };
 		7E5439281FA963D100AF27FD /* SwitchControl.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SwitchControl.json; sourceTree = "<group>"; };
+		7E54392D1FA96FB200AF27FD /* TLLoadingAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLLoadingAnimationViewController.h; sourceTree = "<group>"; };
+		7E54392E1FA96FB200AF27FD /* TLLoadingAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLLoadingAnimationViewController.m; sourceTree = "<group>"; };
+		7E5439301FA970AB00AF27FD /* UIView+TLEmptyStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+TLEmptyStatus.h"; sourceTree = "<group>"; };
+		7E5439311FA970AB00AF27FD /* UIView+TLEmptyStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TLEmptyStatus.m"; sourceTree = "<group>"; };
 		7E87B3E81FA2EDCF008C391C /* TLSurveyLottie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLSurveyLottie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E87B3EB1FA2EDCF008C391C /* TLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLAppDelegate.h; sourceTree = "<group>"; };
 		7E87B3EC1FA2EDCF008C391C /* TLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLAppDelegate.m; sourceTree = "<group>"; };
@@ -479,6 +485,7 @@
 		7E54392A1FA96C2D00AF27FD /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				7E54392C1FA96F8C00AF27FD /* Loading */,
 				7ED76BFB1FA95795000B8DEF /* Refresh */,
 				7ED76AFF1FA331EC000B8DEF /* UIControls */,
 				7ED76AFE1FA331E7000B8DEF /* Transition */,
@@ -499,6 +506,17 @@
 				7E87B3F61FA2EDCF008C391C /* LaunchScreen.storyboard */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		7E54392C1FA96F8C00AF27FD /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				7E54392D1FA96FB200AF27FD /* TLLoadingAnimationViewController.h */,
+				7E54392E1FA96FB200AF27FD /* TLLoadingAnimationViewController.m */,
+				7E5439301FA970AB00AF27FD /* UIView+TLEmptyStatus.h */,
+				7E5439311FA970AB00AF27FD /* UIView+TLEmptyStatus.m */,
+			);
+			path = Loading;
 			sourceTree = "<group>";
 		};
 		7E87B3DF1FA2EDCF008C391C = {
@@ -528,9 +546,9 @@
 			children = (
 				7E54392B1FA96D4A00AF27FD /* Application */,
 				7E54392A1FA96C2D00AF27FD /* Animations */,
+				7ED76B601FA6FA36000B8DEF /* Modules */,
 				7ED76B5B1FA6F5DD000B8DEF /* TLPrefix */,
 				7ED76B571FA6F372000B8DEF /* TLCategory */,
-				7ED76B601FA6FA36000B8DEF /* Modules */,
 				7ED76A8E1FA3162D000B8DEF /* Resources */,
 			);
 			path = TLSurveyLottie;
@@ -1034,6 +1052,7 @@
 				7ED76B561FA6D5F4000B8DEF /* TLGuideViewController.m in Sources */,
 				7ED76B791FA6FDBF000B8DEF /* UIBarButtonItem+TLExtension.m in Sources */,
 				7ED76B731FA6FD17000B8DEF /* NSDate+TLExtension.m in Sources */,
+				7E5439321FA970AB00AF27FD /* UIView+TLEmptyStatus.m in Sources */,
 				7ED76B691FA6FB03000B8DEF /* TLAdvancedViewController.m in Sources */,
 				7ED76A8D1FA314E9000B8DEF /* TLQRScannerViewController.m in Sources */,
 				7ED76AFA1FA3287D000B8DEF /* TLAnimatedTextField.m in Sources */,
@@ -1043,6 +1062,7 @@
 				7ED76B761FA6FD86000B8DEF /* NSDateFormatter+TLExtension.m in Sources */,
 				7ED76A871FA313AA000B8DEF /* TLAnimationExplorerViewController.m in Sources */,
 				7ED76B021FA3321A000B8DEF /* TLAnimationTransitionViewController.m in Sources */,
+				7E54392F1FA96FB200AF27FD /* TLLoadingAnimationViewController.m in Sources */,
 				7E87B3ED1FA2EDCF008C391C /* TLAppDelegate.m in Sources */,
 				7ED76B701FA6FC43000B8DEF /* TLNavigationController.m in Sources */,
 				7ED76B7C1FA6FDF6000B8DEF /* UIImage+TLExtension.m in Sources */,

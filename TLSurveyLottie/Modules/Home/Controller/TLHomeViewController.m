@@ -7,7 +7,6 @@
 //
 
 #import "TLHomeViewController.h"
-#import "TLAppDelegate.h"
 #import "TLAnimationRefreshHeader.h"
 #import "TLAnimationRefreshFooter.h"
 
@@ -41,7 +40,7 @@
     
     self.tableItems = @[].mutableCopy;
     
-    NSArray *item = @[
+    NSArray *item1 = @[
                       @{@"name" : @"Animated Explorer",
                         @"vc" : @"TLAnimationExplorerViewController"},
                       @{@"name" : @"Animated Keyboard",
@@ -52,8 +51,12 @@
                         @"vc" : @"TLAnimationUIControlsViewController"}
                       ];
     
-    [self.tableItems addObject:item];
+    NSArray *item2 = @[
+                      @{@"name" : @"Animated Loading",
+                        @"vc" : @"TLLoadingAnimationViewController"}
+                      ];
     
+    [self.tableItems addObjectsFromArray:@[item1, item2]];
     
     @weakify(self);
     TLAnimationRefreshHeader *refreshHeader = [TLAnimationRefreshHeader headerWithRefreshingBlock:^{
@@ -134,9 +137,7 @@
                 [self presentViewController:ctrl animated:YES completion:nil];
             });
         } else {
-            TLAppDelegate *appDelegate = (TLAppDelegate *) [UIApplication sharedApplication].delegate;
-            UINavigationController *navigationController = (UINavigationController *) appDelegate.viewController;
-            [navigationController pushViewController:ctrl animated:YES];
+            [self.navigationController pushViewController:ctrl animated:YES];
         }
     }
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -151,7 +152,13 @@
     switch (section) {
         case 0:
         {
-            lblTitle.text = @"调研清单";
+            lblTitle.text = @"Lottie原动画";
+            return lblTitle;
+        }
+            break;
+        case 1:
+        {
+            lblTitle.text = @"自定义动画";
             return lblTitle;
         }
             break;
