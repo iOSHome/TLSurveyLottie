@@ -52,9 +52,11 @@
                       ];
     
     NSArray *item2 = @[
-                      @{@"name" : @"Animated Loading+Tips",
+                       @{@"name" : @"Animated Refresh",
+                         @"vc" : @"TLRefreshAnimationViewController"},
+                       @{@"name" : @"Animated Loading+Tips",
                         @"vc" : @"TLLoadingAnimationViewController"},
-                      @{@"name" : @"Animation UIButton+Gift",
+                       @{@"name" : @"Animation UIButton+Gift",
                         @"vc" : @"TLAnimationUIButtonViewController"
                         }
                       ];
@@ -141,6 +143,20 @@
             });
         } else {
             [self.navigationController pushViewController:ctrl animated:YES];
+        }
+    } else {
+        if (indexPath.row == 0) {
+            MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+            hud.label.text = @"刷新动画请在首页界面中操作";
+            hud.mode = MBProgressHUDModeText;
+            [hud showAnimated:YES];
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+                sleep(2);
+
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [hud hideAnimated:YES];
+                });
+            });
         }
     }
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
