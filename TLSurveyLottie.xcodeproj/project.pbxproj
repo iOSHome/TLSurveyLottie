@@ -476,6 +476,18 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		7E54392A1FA96C2D00AF27FD /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				7ED76BFB1FA95795000B8DEF /* Refresh */,
+				7ED76AFF1FA331EC000B8DEF /* UIControls */,
+				7ED76AFE1FA331E7000B8DEF /* Transition */,
+				7ED76AE81FA32139000B8DEF /* Keyboard */,
+				7ED76A841FA31391000B8DEF /* Explorer */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		7E87B3DF1FA2EDCF008C391C = {
 			isa = PBXGroup;
 			children = (
@@ -501,11 +513,7 @@
 		7E87B3EA1FA2EDCF008C391C /* TLSurveyLottie */ = {
 			isa = PBXGroup;
 			children = (
-				7ED76BFB1FA95795000B8DEF /* Animation Reresh */,
-				7ED76AFF1FA331EC000B8DEF /* Animation UIControls */,
-				7ED76AFE1FA331E7000B8DEF /* Animation Transition */,
-				7ED76AE81FA32139000B8DEF /* Animation Keyboard */,
-				7ED76A841FA31391000B8DEF /* Animation Explorer */,
+				7E54392A1FA96C2D00AF27FD /* Animations */,
 				7ED76B5B1FA6F5DD000B8DEF /* TLPrefix */,
 				7ED76B571FA6F372000B8DEF /* TLCategory */,
 				7ED76B601FA6FA36000B8DEF /* Feature */,
@@ -538,7 +546,7 @@
 			path = TLSurveyLottieUITests;
 			sourceTree = "<group>";
 		};
-		7ED76A841FA31391000B8DEF /* Animation Explorer */ = {
+		7ED76A841FA31391000B8DEF /* Explorer */ = {
 			isa = PBXGroup;
 			children = (
 				7ED76A851FA313AA000B8DEF /* TLAnimationExplorerViewController.h */,
@@ -548,7 +556,7 @@
 				7ED76A8B1FA314E9000B8DEF /* TLQRScannerViewController.h */,
 				7ED76A8C1FA314E9000B8DEF /* TLQRScannerViewController.m */,
 			);
-			path = "Animation Explorer";
+			path = Explorer;
 			sourceTree = "<group>";
 		};
 		7ED76A8E1FA3162D000B8DEF /* Resources */ = {
@@ -562,7 +570,7 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		7ED76AE81FA32139000B8DEF /* Animation Keyboard */ = {
+		7ED76AE81FA32139000B8DEF /* Keyboard */ = {
 			isa = PBXGroup;
 			children = (
 				7ED76AF81FA3287C000B8DEF /* TLAnimatedTextField.h */,
@@ -570,10 +578,10 @@
 				7ED76AF61FA3287C000B8DEF /* TLAnimationKeyboardViewController.h */,
 				7ED76AF91FA3287D000B8DEF /* TLAnimationKeyboardViewController.m */,
 			);
-			path = "Animation Keyboard";
+			path = Keyboard;
 			sourceTree = "<group>";
 		};
-		7ED76AFE1FA331E7000B8DEF /* Animation Transition */ = {
+		7ED76AFE1FA331E7000B8DEF /* Transition */ = {
 			isa = PBXGroup;
 			children = (
 				7ED76B001FA3321A000B8DEF /* TLAnimationTransitionViewController.h */,
@@ -581,16 +589,16 @@
 				7ED76B061FA3333D000B8DEF /* TLCloseAnimationViewController.h */,
 				7ED76B071FA3333D000B8DEF /* TLCloseAnimationViewController.m */,
 			);
-			path = "Animation Transition";
+			path = Transition;
 			sourceTree = "<group>";
 		};
-		7ED76AFF1FA331EC000B8DEF /* Animation UIControls */ = {
+		7ED76AFF1FA331EC000B8DEF /* UIControls */ = {
 			isa = PBXGroup;
 			children = (
 				7ED76B031FA33238000B8DEF /* TLAnimationUIControlsViewController.h */,
 				7ED76B041FA33238000B8DEF /* TLAnimationUIControlsViewController.m */,
 			);
-			path = "Animation UIControls";
+			path = UIControls;
 			sourceTree = "<group>";
 		};
 		7ED76B531FA6D5D0000B8DEF /* Guide */ = {
@@ -700,7 +708,7 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		7ED76BFB1FA95795000B8DEF /* Animation Reresh */ = {
+		7ED76BFB1FA95795000B8DEF /* Refresh */ = {
 			isa = PBXGroup;
 			children = (
 				7ED76BFC1FA95920000B8DEF /* TLAnimationRefreshHeader.h */,
@@ -708,7 +716,7 @@
 				7ED76BFF1FA95A53000B8DEF /* TLAnimationRefreshFooter.h */,
 				7ED76C001FA95A53000B8DEF /* TLAnimationRefreshFooter.m */,
 			);
-			path = "Animation Reresh";
+			path = Refresh;
 			sourceTree = "<group>";
 		};
 		C54B5D3AC106EBF831ED5CB3 /* Pods */ = {

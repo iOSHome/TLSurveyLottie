@@ -129,7 +129,10 @@
         ctrl.title = itemArray[indexPath.row][@"name"];
         
         if (indexPath.section == 0) {
-            [self presentViewController:ctrl animated:YES completion:NULL];
+            //由于需要执行动画，必须保证在主线程执行
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self presentViewController:ctrl animated:YES completion:nil];
+            });
         } else {
             TLAppDelegate *appDelegate = (TLAppDelegate *) [UIApplication sharedApplication].delegate;
             UINavigationController *navigationController = (UINavigationController *) appDelegate.viewController;
