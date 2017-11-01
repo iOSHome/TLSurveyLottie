@@ -19,6 +19,7 @@
 @property (nonatomic,strong) LOTAnimationView *playButton;
 @property (nonatomic,assign) BOOL isPlaying;
 
+@property (nonatomic, strong) UIButton *giftButton;
 @end
 
 @implementation TLAnimationUIButtonViewController
@@ -30,6 +31,7 @@
     [self initSwitchButton];
     [self initEditButton];
     [self initPlayButton];
+    [self initGiftButton];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,7 +52,7 @@
     [_switchButton mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
         make.centerX.equalTo(self.view);
-        make.top.equalTo(self.view).offset(60);
+        make.top.equalTo(self.view).offset(20);
         make.width.equalTo(@(216/2));
         make.height.equalTo(@(116/2));
     }];
@@ -72,7 +74,7 @@
     [_editButton mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
         make.centerX.equalTo(self.view);
-        make.top.equalTo(self.switchButton.mas_bottom).offset(60);
+        make.top.equalTo(self.switchButton.mas_bottom).offset(20);
         make.width.equalTo(@(124/2));
         make.height.equalTo(@(124/2));
     }];
@@ -91,11 +93,28 @@
     [_playButton mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
         make.centerX.equalTo(self.view);
-        make.top.equalTo(self.editButton.mas_bottom).offset(60);
+        make.top.equalTo(self.editButton.mas_bottom).offset(20);
         make.width.equalTo(@(160/2));
         make.height.equalTo(@(160/2));
     }];
     [self.playButton setProgressWithFrame:@(50)];
+}
+
+-(void)initGiftButton {
+    self.giftButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.giftButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [self.giftButton setTitle:@"播放高级礼物动画" forState:UIControlStateNormal];
+    [self.giftButton addTarget:self action:@selector(giftButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.giftButton];
+    @weakify(self);
+    [_giftButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.centerX.equalTo(self.view);
+        make.top.equalTo(self.playButton.mas_bottom).offset(20);
+        make.left.equalTo(self.view).offset(15.f);
+        make.right.equalTo(self.view).offset(-15.f);
+        make.height.equalTo(@(30));
+    }];
 }
 
 #pragma mark - Private Methods
@@ -156,6 +175,34 @@
     }
     
     self.isPlaying = !self.isPlaying;
+}
+
+- (void)giftButtonClicked:(UIButton *)button {
+    button.enabled = NO;
+    
+    LOTAnimationView *giftAnimationView = [LOTAnimationView animationNamed:@"HappyBirthday"];
+    [self.view addSubview:giftAnimationView];
+    @weakify(self);
+    [giftAnimationView mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.centerX.equalTo(self.view);
+        make.top.equalTo(self.giftButton.mas_bottom).offset(10);
+        make.left.equalTo(self.view).offset(15.f);
+        make.right.equalTo(self.view).offset(-15.f);
+        make.height.equalTo(@(300));
+    }];
+    
+    @weakify(giftAnimationView);
+    [giftAnimationView playWithCompletion:^(BOOL animationFinished) {
+        @strongify(giftAnimationView);
+        [UIView animateWithDuration:0.5 animations:^{
+            giftAnimationView.alpha = 0.0;
+        } completion:^(BOOL finished) {
+            [giftAnimationView removeFromSuperview];
+        }];
+        
+        button.enabled = YES;
+    }];
 }
 
 @end
