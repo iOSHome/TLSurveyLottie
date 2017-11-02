@@ -92,6 +92,10 @@
 		7E87B3FB1FA2EDCF008C391C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E87B3FA1FA2EDCF008C391C /* main.m */; };
 		7E87B4051FA2EDCF008C391C /* TLSurveyLottieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E87B4041FA2EDCF008C391C /* TLSurveyLottieTests.m */; };
 		7E87B4101FA2EDD0008C391C /* TLSurveyLottieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E87B40F1FA2EDD0008C391C /* TLSurveyLottieUITests.m */; };
+		7E9B7E661FAABC6C00B9AE22 /* PullRefresh1.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E9B7E641FAABC6B00B9AE22 /* PullRefresh1.json */; };
+		7E9B7E671FAABC6C00B9AE22 /* PullRefresh2.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E9B7E651FAABC6C00B9AE22 /* PullRefresh2.json */; };
+		7E9B7E691FAAC12200B9AE22 /* Loading2.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E9B7E681FAAC12200B9AE22 /* Loading2.json */; };
+		7E9B7E6B1FAAC2D100B9AE22 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7E9B7E6A1FAAC2D000B9AE22 /* README.md */; };
 		7ED76A871FA313AA000B8DEF /* TLAnimationExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76A861FA313AA000B8DEF /* TLAnimationExplorerViewController.m */; };
 		7ED76A8A1FA314D7000B8DEF /* TLJSONExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76A891FA314D7000B8DEF /* TLJSONExplorerViewController.m */; };
 		7ED76A8D1FA314E9000B8DEF /* TLQRScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED76A8C1FA314E9000B8DEF /* TLQRScannerViewController.m */; };
@@ -233,6 +237,10 @@
 		7E87B40B1FA2EDD0008C391C /* TLSurveyLottieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TLSurveyLottieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E87B40F1FA2EDD0008C391C /* TLSurveyLottieUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLSurveyLottieUITests.m; sourceTree = "<group>"; };
 		7E87B4111FA2EDD0008C391C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E9B7E641FAABC6B00B9AE22 /* PullRefresh1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PullRefresh1.json; sourceTree = "<group>"; };
+		7E9B7E651FAABC6C00B9AE22 /* PullRefresh2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PullRefresh2.json; sourceTree = "<group>"; };
+		7E9B7E681FAAC12200B9AE22 /* Loading2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Loading2.json; sourceTree = "<group>"; };
+		7E9B7E6A1FAAC2D000B9AE22 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7ED76A801FA2FAC6000B8DEF /* TLSurveyLottie-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TLSurveyLottie-Prefix.pch"; sourceTree = "<group>"; };
 		7ED76A851FA313AA000B8DEF /* TLAnimationExplorerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLAnimationExplorerViewController.h; sourceTree = "<group>"; };
 		7ED76A861FA313AA000B8DEF /* TLAnimationExplorerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLAnimationExplorerViewController.m; sourceTree = "<group>"; };
@@ -321,6 +329,9 @@
 		7E5438841FA9622600AF27FD /* AnimationControl */ = {
 			isa = PBXGroup;
 			children = (
+				7E9B7E681FAAC12200B9AE22 /* Loading2.json */,
+				7E9B7E641FAABC6B00B9AE22 /* PullRefresh1.json */,
+				7E9B7E651FAABC6C00B9AE22 /* PullRefresh2.json */,
 				7E5439281FA963D100AF27FD /* SwitchControl.json */,
 				7E5438851FA9622600AF27FD /* Edit.json */,
 				7E5438861FA9622600AF27FD /* EmptyStatus.json */,
@@ -591,6 +602,7 @@
 		7ED76A8E1FA3162D000B8DEF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7E9B7E6A1FAAC2D000B9AE22 /* README.md */,
 				7E5438911FA9622600AF27FD /* Animation0 */,
 				7E5438841FA9622600AF27FD /* AnimationControl */,
 				7E5438BF1FA9622700AF27FD /* AnimationGuide */,
@@ -889,6 +901,7 @@
 				7E5438EE1FA9622700AF27FD /* PinJump.json in Resources */,
 				7E5438FC1FA9622700AF27FD /* D.json in Resources */,
 				7E54391D1FA9622700AF27FD /* GuidePage3img_2.png in Resources */,
+				7E9B7E661FAABC6C00B9AE22 /* PullRefresh1.json in Resources */,
 				7E5439231FA9622700AF27FD /* img_1.png in Resources */,
 				7E5438E01FA9622700AF27FD /* Play-Pause.json in Resources */,
 				7E5439011FA9622700AF27FD /* I.json in Resources */,
@@ -944,10 +957,13 @@
 				7E5439271FA9639800AF27FD /* Launch.json in Resources */,
 				7E5439171FA9622700AF27FD /* GuidePage1.json in Resources */,
 				7E5439291FA963D100AF27FD /* SwitchControl.json in Resources */,
+				7E9B7E671FAABC6C00B9AE22 /* PullRefresh2.json in Resources */,
 				7E5439221FA9622700AF27FD /* img_0.png in Resources */,
 				7E5439001FA9622700AF27FD /* H.json in Resources */,
 				7E5438F61FA9622700AF27FD /* Apostrophe.json in Resources */,
 				7E5439201FA9622700AF27FD /* GuidePage3.json in Resources */,
+				7E9B7E6B1FAAC2D100B9AE22 /* README.md in Resources */,
+				7E9B7E691FAAC12200B9AE22 /* Loading2.json in Resources */,
 				7E5438DF1FA9622700AF27FD /* LottieLogo.json in Resources */,
 				7E5438ED1FA9622700AF27FD /* MotionCorpse-Jrcanest.json in Resources */,
 				7E5438EA1FA9622700AF27FD /* LottieLogo1.json in Resources */,
